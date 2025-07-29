@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Photography Catalogue</title>
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+
   <style>
     body {
       font-family: sans-serif;
@@ -22,14 +26,13 @@
       gap: 16px;
       padding: 20px;
     }
-    .gallery img {
+    .gallery a img {
       width: 100%;
       height: auto;
       border-radius: 8px;
       transition: transform 0.2s;
-      cursor: zoom-in;
     }
-    .gallery img:hover {
+    .gallery a:hover img {
       transform: scale(1.02);
     }
   </style>
@@ -37,20 +40,23 @@
 <body>
   <h1>Photography Catalogue</h1>
   <div class="gallery">
-    <img src="page_1.jpg" alt="Page 1">
-    <img src="page_2.jpg" alt="Page 2">
-    <img src="page_3.jpg" alt="Page 3">
-    <img src="page_4.jpg" alt="Page 4">
-    <img src="page_5.jpg" alt="Page 5">
-    <img src="page_6.jpg" alt="Page 6">
-    <img src="page_7.jpg" alt="Page 7">
-    <img src="page_8.jpg" alt="Page 8">
-    <img src="page_9.jpg" alt="Page 9">
-    <img src="page_10.jpg" alt="Page 10">
-    <img src="page_11.jpg" alt="Page 11">
-    <img src="page_12.jpg" alt="Page 12">
-    <img src="page_13.jpg" alt="Page 13">
-    <img src="page_14.jpg" alt="Page 14">
+    <a href="page_1.jpg" data-lightbox="catalogue"><img src="page_1.jpg" alt="Page 1"></a>
+    <a href="page_2.jpg" data-lightbox="catalogue"><img src="page_2.jpg" alt="Page 2"></a>
+    <a href="page_3.jpg" data-lightbox="catalogue"><img src="page_3.jpg" alt="Page 3"></a>
+    <a href="page_4.jpg" data-lightbox="catalogue"><img src="page_4.jpg" alt="Page 4"></a>
+    <a href="page_5.jpg" data-lightbox="catalogue"><img src="page_5.jpg" alt="Page 5"></a>
+    <a href="page_6.jpg" data-lightbox="catalogue"><img src="page_6.jpg" alt="Page 6"></a>
+    <a href="page_7.jpg" data-lightbox="catalogue"><img src="page_7.jpg" alt="Page 7"></a>
+    <a href="page_8.jpg" data-lightbox="catalogue"><img src="page_8.jpg" alt="Page 8"></a>
+    <a href="page_9.jpg" data-lightbox="catalogue"><img src="page_9.jpg" alt="Page 9"></a>
+    <a href="page_10.jpg" data-lightbox="catalogue"><img src="page_10.jpg" alt="Page 10"></a>
+    <a href="page_11.jpg" data-lightbox="catalogue"><img src="page_11.jpg" alt="Page 11"></a>
+    <a href="page_12.jpg" data-lightbox="catalogue"><img src="page_12.jpg" alt="Page 12"></a>
+    <a href="page_13.jpg" data-lightbox="catalogue"><img src="page_13.jpg" alt="Page 13"></a>
+    <a href="page_14.jpg" data-lightbox="catalogue"><img src="page_14.jpg" alt="Page 14"></a>
   </div>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
